@@ -8,85 +8,102 @@
 
     <title>sosabreyer.dev</title>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap" />
+    <link rel="stylesheet" href="css/style.css" /> 
+
     <script src="https://kit.fontawesome.com/5ecce42e25.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav id="navbar" class="navbar">
-            <ul class="navbar-list">
-                <li>
-                    <a href="#welcome-section">About</a>
-                </li>
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-            <a class="navbar-brand" href="#">sosabreyer.dev</a>
+            <div class="navbar-container">
+                <div class="navbar-brand">
+                    <a href="#"><i class="fas fa-skull"></i> sosabreyer.dev</a>
+                </div>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="#welcome-section">About</a>
+                    </li>
+                    <li>
+                        <a href="#toolbox">Toolbox</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main role="main">
-        <section id="welcome-section" class="welcome-section">
+        <section id="welcome-section" class="container welcome-section">
+            <img class="avatar" src="images/avatar.jpg" alt="Javi">
             <h1>Hi, I'm Javier Sosa Breyer</h1>
             <p>Web Developer | </p>
             <p>PHP and JS programmer | </p>
             <p>Linux Enthusiast</p>
-            <hr />
         </section>
         
-        <section id="skills" class="skills-section">
-            <h2 class="projects-section-header">Skills Set</h2>
-            <div class="skills-card">
-                <div class="skills-card-header">
-                    <h5 class="skills-card-title">Front-End</h5>
-                </div>
-                <div class="skills-card-body">
-                    <div class="row">
-                        <div class="column">
-                            <i class="fab fa-html5"></i>
-                        </div>
-                        <div class="column">
-                            <i class="fab fa-css3-alt"></i>
-                        </div>
-                        <div class="column">
-                            <i class="fab fa-js"></i>
-                        </div>
+        <section id="toolbox" class="container toolbox-section">
+            <div class="toolbox-section-header">
+                <h2>Toolbox</h2>
+            </div>
+            <div class="toolbox-container container">
+                <div class="row">
+                    <div class="toolbox-item xs-full s-one-half m-one-fifth column">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML 5</p>
+                    </div>
+                    <div class="toolbox-item xs-full s-one-half m-one-fifth column">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS 3</p>
+                    </div>
+                    <div class="toolbox-item xs-full s-one-half m-one-fifth column">
+                        <i class="fab fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="toolbox-item xs-full s-one-half m-one-fifth column">
+                        <i class="fab fa-php"></i>
+                        <p>PHP</p>
+                    </div>
+                    <div class="toolbox-item xs-full s-one-half m-one-fifth column">
+                        <i class="fab fa-laravel"></i>
+                        <p>Laravel</p>
                     </div>
                 </div>
             </div>
-            <hr />
         </section>
 
-        <section id="contact" class="contact-section">
+        <section id="contact" class="container contact-section">
             <div class="contact-section-header">
                 <h2>Contact</h2>
             </div>
             <div class="contact-links">
-                <a id="profile-link" href="https://github.com/JSosaBreyer" target="_blank" rel="external">
+                <a class="contact-details" href="https://github.com/JSosaBreyer" target="_blank" rel="external">
                     <i class="fab fa-github-square"></i> GitHub
                 </a>
-                <a href="https://www.linkedin.com/in/javier-sosa-breyer" target="_blank" rel="external">
+                <a class="contact-details" href="https://codepen.io/jsosabreyer/" target="_blank" rel="external">
+                    <i class="fab fa-codepen"></i> CodePen
+                </a>
+                <a class="contact-details" href="https://www.linkedin.com/in/javier-sosa-breyer" target="_blank" rel="external">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
-                <a href="https://twitter.com/jsosabreyer" target="_blank" rel="external">
+                <a class="contact-details" href="https://twitter.com/jsosabreyer" target="_blank" rel="external">
                     <i class="fab fa-twitter-square"></i> Twitter
                 </a>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer container">
         <p>
             <a rel="license"
                 href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
                 target="_blank">
                 <i class="fab fa-creative-commons"></i>
-                BY-NC-SA 4.0
-            </a> sosabreyer.dev
+                sosabreyer.dev
+            </a> 
         </p>
     </footer>
 </body>
