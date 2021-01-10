@@ -44,6 +44,7 @@ html {
 } 
 
 /* Base styles */
+
 body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.8rem; /* 18px */
@@ -110,6 +111,7 @@ a {
 }
 
 /* Extra small devices (phones, 425px and down) */
+
 @media only screen and (max-width: 425px) {
     .xs-full {
         width: 100%;
@@ -135,6 +137,7 @@ a {
 } 
 
 /* Small devices (portrait tablets and large phones, 425px and up) */
+
 @media only screen and (min-width: 425px) {
     .s-full {
         width: 100%;
@@ -160,6 +163,7 @@ a {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width: 768px) {
     .m-full {
         width: 100%;
@@ -185,6 +189,7 @@ a {
 }
 
 /* navbar */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -240,6 +245,7 @@ a {
 }
 
 /* Welcome section */
+
 .welcome-section {
     display: flex;
     flex-direction: column;
@@ -267,7 +273,103 @@ a {
     font-style: italic;
 }
 
+/* Projects section */
+
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: var(--main-blue);
+}
+
+.projects-section-header > h2 {
+    font-size: 6rem;
+}
+
+.projects-container {
+    margin-top: 4rem;
+}
+
+@media (max-width: 28.75em) {
+    .projects-section-header {
+        font-size: 4rem;
+    }
+}
+
+/* "Automagic" image grid using no media queries */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+@media (max-width: 30.625em) {
+    .projects-section {
+        padding: 6rem 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project {
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.code {
+    color: var(--main-gray);
+    transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+    color: #ff7f50;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+.btn-show-all {
+    font-size: 2rem;
+    background: var(--main-gray);
+    transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+    background: var(--main-red);
+}
+
+.btn-show-all:hover > i {
+    transform: translateX(2px);
+}
+
+.btn-show-all > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
 /* Toolbox section */
+
 .toolbox-section {
     text-align: center;
     padding: 10rem 2rem;
@@ -297,7 +399,8 @@ a {
     font-size: 8rem;
 }
 
- /* Contact section */
+/* Contact section */
+
 .contact-section {
     display: flex;
     flex-direction: column;
@@ -334,7 +437,8 @@ a {
     padding: 2rem;
 }
 
- /* Footer */
+/* Footer */
+
 footer {
     font-weight: 300;
     display: flex;
